@@ -1,7 +1,18 @@
 /* Global Styles
 ----------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 body {
     color:#796D83;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
 img {
     width: 300px;
@@ -12,15 +23,37 @@ a {
 a:hover {
     text-decoration: none;
 }
+h1 {
+    font-size: 100px;
+    line-height: 1;
+}
+h2 {
+    font-size: 45px;
+}
+h1, h2 {
+    font-family: 'Mooli', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
 .content-wrap {
-    width: 900px;
+    width: 800px;
     margin: 0 auto;
+    padding: 60px 0; 
 }
 /* Profile
 ----------------------------------------*/
 header {
     background: #e3f0ff;
 }
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .dimension {
+    text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+  }
 
 /* Projects
 ----------------------------------------*/
@@ -36,9 +69,22 @@ header {
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
 }
 .projects .btn:hover {
     background: rgba(47, 48, 97, 80%);
+}
+.project-item{
+    overflow: hidden;
+    border-bottom: 1px dashed darkgrey;
+    padding: 25px 0;
+}
+.projects-item img{
+    float: left;
+    margin-right: 20px;
+}
+.project-item h3 {
+    margin-top: 0;
 }
 
 /* Work Experience
